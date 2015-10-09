@@ -1,0 +1,83 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.sf.np"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+
+
+    /*productFlavors {
+        fortest {
+            manifestPlaceholders = [CHANNEL_NAME: "fortest", APP_NAME: "哇塞Beta版"]
+            buildConfigField 'String', 'HOST', '"http://202.104.122.67:8081/v2"'
+            buildConfigField 'String', 'HOST_SHARE', '"http://202.104.122.67:8082"'
+            buildConfigField 'String', 'HOST_ORDER', '"http://202.104.122.67:8008"'
+            buildConfigField 'String', 'HOST_ACTIVITY', '"http://202.104.122.67:3008"'
+        }
+
+    }*/
+
+
+
+
+
+    /*buildTypes {
+        debug {
+            buildConfigField 'String','HOST','"http://api.91wasai.com/v2"'
+            buildConfigField 'String','HOST_SHARE','"http://web.91wasai.com"'
+            buildConfigField 'String','HOST_ORDER','"http://fl.91wasai.com"'
+            buildConfigField 'String','HOST_ACTIVITY','"http://hd.91wasai.com"'
+            manifestPlaceholders = [CHANNEL_NAME: "debug",APP_NAME: "哇塞Dev版"]
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.debug
+        }*/
+
+
+ /*       release {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            minifyEnabled false
+            zipAlignEnabled false
+            shrinkResources false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    def outputFile = output.outputFile
+                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                        def fileName = "wasai_v${defaultConfig.versionName}_${variant.productFlavors[0].name}.apk"
+                        output.outputFile = new File(outputFile.parent, fileName)
+                    }
+                }
+            }
+        }*/
+//    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile files('libs/microlog4android-1.0.0.jar')
+    compile files('libs/butterknife-7.0.1.jar')
+    compile 'com.android.support:recyclerview-v7:22.2.0'
+    compile 'com.android.support:cardview-v7:22.2.0'
+    compile files('libs/zbar.jar')
+}

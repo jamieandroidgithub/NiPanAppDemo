@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">涅槃Dev版</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="spinnername">
+        <item>您好，您的快件已经帮您放到保安室，请速领</item>
+        <item>您的快递已经到楼下了，麻烦下来签收。</item>
+    </string-array>
+</resources>

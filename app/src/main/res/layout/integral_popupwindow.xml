@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/successPwdPopupwindow"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40.0dip"
+        android:layout_marginRight="40.0dip"
+        android:background="@drawable/rounded_edittext"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_view0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/primary_light"
+            android:gravity="center"
+            android:text="您好，您的快件已经帮您放到保安室，请速领"
+            android:textColor="@color/black_1e1d1c"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/text_view1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/green"
+            android:gravity="center"
+            android:text="您的快递已经到楼下了，麻烦下来签收。"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+
+        <TextView
+            android:id="@+id/text_view2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="@color/primary_dark"
+            android:gravity="center"
+            android:text="您的快递已经放到蜂巢柜机，请及时领取，谢谢"
+            android:textColor="@color/white"
+            android:textSize="16.0sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
